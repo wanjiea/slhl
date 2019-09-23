@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{:getSetting('system.title')} </title>
+
+    <link href="home_url/css/bootstrap.min.css" rel="stylesheet">
+    <link href="home_url/css/font-awesome.css-v=4.4.0.css" rel="stylesheet">
+    <link href="home_url/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="home_url/css/style.min.css" rel="stylesheet">
+</head>
+{include file="Base:base" /}
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <h3 style="color:red">此模块为开发人员操作</h3>
+                <div class="ibox-title">
+                    <h5>{empty name='info'}添加{else/}修改{/empty}权限信息</h5>
+                </div>
+                <div class="ibox-content">
+                    <form enctype="multipart/form-data" method="post" id="add_step" class="form-horizontal">
+                        <table class="table table-bordered">
+
+                            <tr>
+                                <td class="col-sm-2">    权限资源名称：</td>
+                                <td class="col-sm-8">
+                                    <input type="text" class="form-control" name="name" value="{$info.name}" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>所属分组：</td>
+                                <td>
+                                    <select name="group" class="form-control" style="width:150px;">
+                                        {foreach name="group" item="vo" key="key"}
+                                        <option value="{$key}" {if condition="$info['group'] eq $key"}selected{/if}>{$vo.name}</option>
+                                        {/foreach}
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>添加权限码：</td>
+                                <td>
+                                    <div  class="col-xs-3">
+                                        <select id="controller" class="form-control" onchange="get_act_list(this)" style="width:200px;margin-left:-15px;">
+                                            <option value="">选择控制器</option>
+                                            {foreach name="planList" item="vo"}
+                                            <option value="{$vo}">{$vo}</option>
+                                            {/foreach}
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-1">@</div>
+                                    <div class="col-xs-2">
+                                        <select class="form-control" id="act_list" style="width:150px;">
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-1"><input type="button" value="添加权限" onclick="add_right()" class="btn btn-primary"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table class="table table-bordered table-hover">
+                                        <tr><th style="width:80%">权限码</th><th>操作</th></tr>
+                                        <tbody id="rightList">
+                                        {foreach name="info['right']" item="vo"}
+                                        <tr><td><input name="right[]" type="text" value="{$vo}" class="form-control" style="width:400px;"></td>
+                                            <td><a href="javascript:;" onclick="$(this).parent().parent().remove();">删除</a></td></tr>
+                                        {/foreach}
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tfoot>
+                            <tr>
+                                <td>
+                                    <input type="hidden" name="id" value="{$info.id}">
+                                </td>
+                                <td class="text-center"><input class="btn btn-primary save" type="button"  value="保存"></td></tr>
+                            </tfoot>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="home_url/js/jquery.min.js"></script>
+<script src="home_url/js/bootstrap.min.js"></script>
+<script src="home_url/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="home_url/js/content.min.js"></script>
+<script src="home_url/js/plugins/iCheck/icheck.min.js"></script>
+<script src="home_url/js/peity-demo.min.js"></script>
+
+<script>
+    $('.save').click(function(){
+        var post = $('#add_step').serializeArray();
+
+        if($('input[name=name]').val() == ''){
+            alert('权限名称不能为空');
+            // layer.msg('权限名称不能为空！', {icon: 2,time: 1000});
+            return false;
+        }
+
+        if($('input[name="right\[\]"]').length == 0){
+            alert('权限码不能为空');
+            // layer.msg('权限码不能为空！', {icon: 2,time: 1000});
+            return false;
+        }
+
+        $.post("{:url('Manager/rightHandle')}",post, function(data){
+            if(data.status){
+                dialog.showTips(data.msg,"","{:url('Manager/rightList')}");
+            }else{
+                alert(data.msg);
+            }
+        }, "json");
+        return false;
+    });
+    function adsubmit(){
+
+
+        $('#adminHandle').submit();
+    }
+
+    function add_right(){
+        var a = [];
+        $('#rightList .form-control').each(function(i,o){
+            if($(o).val() != ''){
+                a.push($(o).val());
+            }
+        })
+        var ncode = $('#controller').val();
+        if(ncode !== ''){
+            var temp = ncode+'@'+ $('#act_list').val();
+            if($.inArray(temp,a) != -1){
+                layer.msg('此权限码已经添加！', {icon: 2,time: 1000});
+                return false;
+            }
+        }
+        var strtr = '<tr>';
+        if(ncode!= ''){
+            strtr += '<td><input type="text" name="right[]" value="'+ncode+'@'+ $('#act_list').val()+'" class="form-control" style="width:400px;"></td>';
+        }else{
+            strtr += '<td><input type="text" name="right[]" value="" class="form-control" style="width:400px;"></td>';
+        }
+        strtr += '<td><a href="javascript:;" onclick="$(this).parent().parent().remove();">删除</a></td>';
+        $('#rightList').append(strtr);
+    }
+
+    function get_act_list(obj){
+        $.ajax({
+            url: "{:url('Manager/ajax_get_action')}",
+            type:'post',
+            data: {'controller':$(obj).val()},
+            dataType:'html',
+            success:function(res){
+                $('#act_list').empty().append(res);
+            }
+        });
+    }
+</script>
+</body>
+
+</html>

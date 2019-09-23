@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{:getSetting('system.title')} </title>
+
+	<link href="home_url/css/bootstrap.min.css" rel="stylesheet">
+	<link href="home_url/css/font-awesome.css-v=4.4.0.css" rel="stylesheet">
+	<link href="home_url/css/plugins/iCheck/custom.css" rel="stylesheet">
+	<link href="home_url/css/style.min.css" rel="stylesheet">
+	<style>
+		.contact_mobile_div {
+			position: relative;
+		}
+		.contact_mobile_div a {
+			position: relative;top: -34px;left: 33%;
+		}
+		.control-div {
+			padding-top: 7px;
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+{include file="Base:base" /}
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="ibox float-e-margins">
+				<div class="ibox-title">
+					<h5>留言详情</h5>
+				</div>
+				<div class="ibox-content">
+					<form enctype="multipart/form-data" method="post" id="add_step" class="form-horizontal">
+
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label">姓名：</label>
+
+							<div class="col-sm-9 control-div">
+								{$cache.name}
+							</div>
+						</div>
+						<div class="hr-line-dashed"></div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label">手机号：</label>
+
+							<div class="col-sm-9 control-div">
+								{$cache.tel}
+							</div>
+						</div>
+						<div class="hr-line-dashed"></div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label">邮箱：</label>
+
+							<div class="col-sm-9 control-div">
+								{$cache.email}
+							</div>
+						</div>
+						<div class="hr-line-dashed"></div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label">内容：</label>
+
+							<div class="col-sm-9 control-div">
+								{$cache.content}
+							</div>
+						</div>
+						<div class="hr-line-dashed"></div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label">留言时间：</label>
+
+							<div class="col-sm-9 control-div">
+								{$cache.add_time}
+							</div>
+						</div>
+						<div class="hr-line-dashed"></div>
+
+						<div class="form-group">
+							<div class="col-sm-4 col-sm-offset-2">
+								<a href="javascript:history.back();" class="btn btn-white" type="submit">返回</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="home_url/js/jquery.min.js"></script>
+<script src="home_url/js/bootstrap.min.js"></script>
+<script src="home_url/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="home_url/js/content.min.js"></script>
+<script src="home_url/js/plugins/iCheck/icheck.min.js"></script>
+<script src="home_url/js/peity-demo.min.js"></script>
+</body>
+
+</html>

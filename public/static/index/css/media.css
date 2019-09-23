@@ -1,0 +1,508 @@
+@charset "UTF-8";
+@media screen and (max-width: 1400px){
+
+}
+@media screen and (max-width: 1200px){
+    .page_title h3 {  font-size: 40px;  }
+    .page_title p {  font-size: 18px;  }
+    .index_main .section3 .vantagem_list ul li h3 {  font-size: 30px;  }
+    .index_main .section3 .vantagem_list ul li p {  font-size: 18px;  }
+
+
+    .index_main .section2 .page_leftimg .box {
+        height: auto!important;
+        width: 43.72%!important;
+    }
+
+    .one_msg {  top: -400%!important;  left: 300%!important;  height:auto;  width: 700%;  }
+    .index_msg_title {  font-size: 28px!important;  line-height: 42px!important; }
+    .index_msg_content {
+        font-size: 18px!important;
+        line-height: initial!important;  }
+    .four_msg {
+        top: -282%!important;
+        right: 217%!important;
+    }
+    .three_msg {
+        top: -283%!important;
+        right: 234%!important;
+        width: 680%!important;
+    }
+    .two_msg {
+        top: -390%;
+        left: 306%;
+        width: 760%;
+    }
+
+
+
+
+
+    .project .importantinfo_title h3 {  font-size: 40px;  }
+    .project .importantinfo_title p {  font-size: 18px;  }
+    .project .project_header .project_header_advice h2 {  font-size: 40px;  }
+    .project .project_header .project_header_advice h3 {  font-size: 18px;  }
+    .project .msgcontent .msgcontent_msg {  font-size: 24px;  line-height: 45px;  }
+    .Terminal_title {  font-size: 20px;  }
+    .Terminal_msg {  font-size: 16px;  }
+    .project .Charging_treasure_msg .msg_content {  font-size: 24px;  line-height: 45px;  }
+    .msg_item h3 {  font-size: 24px;  line-height: 45px;  }
+    .msg_item p {  font-size: 18px;  }
+
+
+    .news_main .news_header .news_header_advice h2 {  font-size: 40px;  }
+    .news_main .importantinfo_title h3 {  font-size: 40px;  }
+    .news_main .importantinfo_title p {  font-size: 18px;  }
+    .info_content_one {  margin-top: 5%;  }
+    .news_main .msgcontent_title {  font-size: 24px;  }
+    .news_main .companynews .importantinfo_lists {  margin-top: 5%;  }
+    .news_main .msgcontent_msg {  font-size: 16px;       height: auto;  display: -webkit-box;  -webkit-box-orient: vertical;  -webkit-line-clamp: 5;  overflow: hidden;  }
+
+
+    .joins .joins_header .joins_header_advice h3 {  font-size: 18px;letter-spacing: 28px;  }
+    .joins .joins_header .joins_header_advice h2 {  font-size: 40px;  }
+    .joins .joins_header .joins_header_advice p {  letter-spacing: 4px;  }
+    .joins .Businessinfo .joins_two_title h3 {  font-size: 40px;  }
+    .joins .Businessinfo .joins_two_title p {  font-size: 18px;  }
+    .joins .Businessinfo .Advantages_msg .msg_item .msg_header .msg_content {  font-size: 16px;    display: -webkit-box;  -webkit-box-orient: vertical;  -webkit-line-clamp: 5;  overflow: hidden;  height: auto;  }
+    .joins .Businessinfo .Advantages_msg .msg_item h3 {  font-size: 20px;  }
+    .joins  .Revenue_header_item p {  font-size: 28px;  }
+    .joins .Businessinfo .Revenue_content_header p {  font-size:20px;  }
+    .joins  .contact_content_right p {  font-size: 22px;  }
+    .index_main .section2 .page_leftimg .box .bg {  padding: 0 20px 105%;  padding-top: 17px;  transition: all .3s ease;  }
+
+    .Business_content_item h6 {
+        font-size: 20px;
+    }
+    .Business_content_item p {
+        font-size: 24px;
+    }
+    .contact_content_left_one p {
+        width: 31.61%;    font-size: 22px;
+    }
+    .contact_content_left_one_erweima{
+        width: 49.67%;
+    }
+    .contact_content_left_one_erweima img{
+        width:100%;
+    }
+    .contact_content_left_msg {
+        font-size: 22px;
+    }
+    .contact_content_right input {
+        font-size: 22px;
+    }
+
+
+
+    .InvestorReturns .InvestorReturns_one .InvestorReturns_one_advice h3 {
+        font-size: 18px;letter-spacing: 28px;
+    }
+    .InvestorReturns .InvestorReturns_one .InvestorReturns_one_advice h2 {
+        font-size: 40px;
+    }
+    .InvestorReturns .InvestorReturns_one .InvestorReturns_one_advice p {
+        letter-spacing: 4px;
+    }
+
+    .InvestorReturns .InvestorReturns_two_title h3 {
+        font-size: 40px;
+    }
+    .InvestorReturns .InvestorReturns_two_title p {
+        font-size: 18px;
+    }
+    .InvestorReturns .InvestorReturns_two .InvestorReturns_two_main .InvestorReturns_two_main_list h4 {
+        font-size: 24px;
+    }
+    .InvestorReturns .InvestorReturns_two .InvestorReturns_two_main .InvestorReturns_two_main_list p {
+        color: #000000;
+        font-size: 20px;
+        line-height: 42px;
+        letter-spacing: 2px;
+    }
+    .talent_title li {
+        font-size: 28px;
+    }
+    .link li {
+        font-size: 22px;
+    }
+    .talent_box_one .link li {
+        font-size: 20px;
+    }
+    .talent_box_one_fubiao p:first-child {
+        font-size: 24px;
+    }
+    .talent_box_one_fubiao p:last-child {
+        font-size: 24px;
+    }
+    .InvestorReturns_four_text p {
+        font-size: 22px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+    .fp-tableCell video {
+        height: auto!important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .header {  padding: 0 10px  }
+    .header #navToggle {  height: 100%;  padding: 9px 15px;  margin-right: -15px;  display: inline-block;  float: right  }
+    .header #navToggle span {  position: relative;  width: 25px;  height: 1px;  margin-top: 19px  }
+    .header #navToggle span:before, .header #navToggle span:after {  content: '';  position: relative;  width: 100%;  height: 1px;  left: 0  }
+    .header #navToggle span, .header #navToggle span:before, .header #navToggle span:after {  -webkit-transition: .3s;  -moz-transition: .3s;  -o-transition: .3s;  transition: .3s;  display: block;  background: #4f4f4f  }
+    .header #navToggle span:before {  top: 8px  }
+    .header #navToggle span:after {  bottom: 10px  }
+    .header #navToggle.open span:before {  top: 10px;  -webkit-transform: translateY(-11px) rotate(-45deg);  -moz-transform: translateY(-11px) rotate(-45deg);  -ms-transform: translateY(-11px) rotate(-45deg);  -o-transform: translateY(-11px) rotate(-45deg);  transform: translateY(-11px) rotate(-45deg)  }
+    .header #navToggle.open span:after {  bottom: 12px;  -webkit-transform: translateY(10px) rotate(45deg);  -moz-transform: translateY(10px) rotate(45deg);  -ms-transform: translateY(10px) rotate(45deg);  -o-transform: translateY(10px) rotate(45deg);  transform: translateY(10px) rotate(45deg)  }
+    .header #navToggle.open span {  background: 0 0  }
+    .header #navToggle.open span:before, .header #navToggle.open span:after {  background: #4f4f4f  }
+    .header .nav {  display: none  }
+    .banner img {  height: 600px;  object-fit: cover  }
+    .index_main .section2 .page_leftimg .box .temp .name {  font-size: 18px;  }
+
+
+    .project .project_header .project_header_img {  display: none;  }
+    .project .project_header .project_header_advice {  text-align: center;  }
+    .project .project_header .project_header_advice a {  margin: 5% auto 0;  }
+    .project .msgcontent {  width: 51%;  position: absolute;  right: 0;  top: 25%;  padding: 40px;  display: -webkit-box;  -webkit-box-orient: vertical;  -webkit-line-clamp: 6;  overflow: hidden;    height: 320px;  }
+    .project .importantinfo_lists .footimg img {  width: 100%;  }
+
+
+    .news_main .msgcontent_msg {  -webkit-line-clamp: 3;    height: auto;  }
+    .info_content_one {  padding-bottom: 10%;  }
+    .news_main .info_content_two {  padding-bottom: 5%;  }
+
+
+    .joins .Businessinfo .Advantages_msg .msg_item h3 {
+        font-size: 16px;
+    }
+    .joins .Businessinfo .Advantages_msg .msg_item .msg_header .msg_content {
+        font-size: 16px;
+    }
+    .talent_box_one .link li {
+        font-size: 16px;
+    }
+    .link li {
+        font-size: 18px;
+    }
+    .talent_box_one_fubiao p:first-child {
+        font-size: 22px;
+    }
+    .talent_box_one_fubiao p:last-child {
+        font-size: 22px;
+    }
+
+    .news_main .companynews {
+        margin-top: 35%;
+    }
+
+
+    .header .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .header .left {
+        width: 15%;
+        height: 40px;
+        float: inherit;
+    }
+    .header .left a img {
+        height: auto;
+        margin-top: 0;
+        width: 100%;
+    }
+    .header #navToggle {
+        height: 40px;
+        float: inherit;    padding: 0 15px;
+
+    }
+    .cf:before, .cf:after, .clearfix:before, .clearfix:after {
+        content: "";
+        display: none;
+    }
+    .index_main .section2 .page_leftimg .box .bg {  padding: 0 20px 65%;  padding-top: 17px;  transition: all .3s ease;  }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .index_main .section1 .index_banner .item>div{  height: auto!important;  }
+    .index_main .fp-section.fp-table, .index_main .fp-slide.fp-table{  height: auto!important;  }
+    .index_main .section1 .index_banner .item .inner .block_txt {  top: 12%;  }
+    .index_main .section1 .index_banner .item {  height: auto!important;  }
+    .fp-tableCell {  height: auto!important;  }
+    .fp-tableCell video {  height: auto!important;  }
+    .index_main .section2 {  padding-bottom: 15%;  }
+    .index_main .section3 {  padding-bottom: 15%;  }
+    .index_main .section4 {  padding-bottom: 15%;  }
+    .index_main .section3 .vantagem_list ul li {  width: 47%;  float: left;  margin-left: 0;  margin-bottom: 10%;  }
+    .index_main .section3 .vantagem_list ul li:nth-child(2n) {  margin-left: 5.3%;  }
+
+
+
+    .project .project_header .project_header_advice h3 {  font-size: 16px;  letter-spacing: 6px;  }
+    .project .project_header .project_header_advice h2 {  font-size: 28px;  }
+    .project .project_header .project_header_advice p {  letter-spacing: 0;  }
+    .project .importantinfo_title h3 {  font-size: 22px;  letter-spacing: 2px;  }
+    .project .importantinfo_title p {  font-size: 16px;letter-spacing: 4px;margin-top: 0%;  }
+    .project .msgcontent .msgcontent_msg {  font-size: 16px;line-height: 38px;  }
+    .info_content_one {  }
+    .info_content_one {  margin-top: 10%;  }
+    .project .info_content_one .infoimg {  width: 100%;  }
+    .project .msgcontent {  position: inherit;width: 100%;padding: 2%; -webkit-line-clamp: 9;  height: auto;  }
+    .Terminal_one {  width: 100%;  position: initial;  }
+    .Terminal_two {  position: initial;  width: 100%;  }
+    .Terminal_three {  position: initial;  width: 100%;  }
+    .product_img {  position: initial;  width: 100%;  }
+    .Terminal_content {  width: 100%;  height: auto;  position: relative;  }
+    .project .importantinfo_lists .footimg {  width: 100%;  }
+    .project .Charging_treasure_content {  width: 100%;  }
+    .Terminal_msg {  font-size: 16px;  line-height: 30px;  }
+    .Terminal_content>div{  margin-bottom: 5%;  }
+    .project .importantinfo_title p {  line-height: 30px;  }
+    .project .Charging_treasure_msg .msg_content {  font-size: 16px;  line-height: 38px;padding: 28px 2%;  }
+    .msg_item p {  font-size: 16px;  }
+    .msg_item h3 {  font-size: 18px;  }
+    .project .msg_item {  margin-top: 0;  }
+    .food_content .food_content_nav {  font-size: 16px;  width: 100%;  }
+    .food_content .container {  display: inherit;  }
+    .food_content .food_content_nav li a {  font-size: 14px;  }
+    .food_content .container .foot_content_meass {  width: 50%;  overflow: hidden;  margin: 5% auto;  display: flex;  justify-content: space-between;  }
+    .food_content .container .foot_content_meass div {  width: 25%;  float: left;  }
+    .food_content .food_content_nav li {  line-height: 32px;  }
+    .Charging_treasure {  margin-bottom: 7%;  }
+    .used_content_img1 {  width: 100%;  }
+    .used_content_img {  width: 100%;  }
+    .project .project_header .project_header_advice a {  font-size: 16px;  margin-top: 5%;  width: 50%;  height: 40px;  line-height: 40px;  }
+
+    .news_main .news_header .news_header_advice h2 {  font-size:28px;  }
+    .news_main .news_header .news_header_advice p {  font-size: 14px;  letter-spacing: 0;  }
+    .news_main .importantinfo_title h3 {  font-size: 22px;  letter-spacing: 2px;  }
+    .news_main .importantinfo_title p {  font-size: 16px;letter-spacing: 4px;margin-top: 0%;  }
+    .info_content_one .infoimg {  width: 100%;  }
+    .news_main .msgcontent {  width: 100%;  position: initial;  }
+    .news_main .msgcontent_title {  font-size: 20px;  }
+    .news_main .msgcontent_msg {  -webkit-line-clamp: inherit;  }
+    .news_main .msgcontent {  padding: 20px 20px 17%;  }
+    .news_main .info_content_two .msgcontent {  width: 100%;  position: inherit;    padding-bottom: 14%;  }
+    .news_main .info_content_two .infoimg {  width: 100%;  }
+    .news_main .companynews .importantinfo_lists .newsimg {  width: 100%;  }
+    .news_main .companynews .importantinfo_lists .newsmsg_content {  width: 100%;margin-top: 10%;  }
+    .news_main .news_item {  display: inline-block;  padding-bottom: 5%;  }
+
+
+    .joins .joins_header .joins_header_advice h3 {  font-size: 16px;  letter-spacing: 6px;  }
+    .joins .joins_header .joins_header_advice h2 {  font-size: 28px;letter-spacing: 4px;  }
+    .joins .joins_header .joins_header_advice p {  letter-spacing: 0;  }
+    .joins .joins_header .joins_header_advice a {  font-size: 16px;  margin-top: 5%;  width: 50%;  height: 40px;  line-height: 40px;  }
+    .joins .Businessinfo .joins_two_title h3 {
+        font-size: 22px;  letter-spacing: 2px;
+    }
+    .joins .Businessinfo .joins_two_title p {
+        font-size: 16px;letter-spacing: 4px;  margin-top: 4%;
+        line-height: 22px;
+    }
+    .joins .Businessinfo .Advantages_msg .msg_item {
+        width: 100%!important;    margin-bottom: 5%;
+        border-radius: 20px;
+
+    }
+    .joins .Businessinfo .Advantages_msg .msg_item .msg_header .msg_content {
+        -webkit-line-clamp: inherit;font-size: 16px!important;
+    }
+    .joins .Businessinfo .Revenue_header {
+        display: initial;
+    }
+    .Revenue_header_item {
+        margin:5% auto;
+    }
+    .contact_content_left {
+        width: 100%;
+    }
+    .contact_content {
+        display: inherit;
+    }
+    .contact_content_left_one p {
+        width: 31.61%;
+        font-size: 18px;
+    }
+    .contact_content_left_msg {
+        font-size: 18px;
+    }
+    .contact_content_right {
+        width: 100%;
+    }
+    .contact_content_right input {
+        font-size: 16px;
+    }
+    .joins .contact_content_right p {
+        width: 50%;
+        font-size: 16px;
+        line-height: 50px;
+        height: 50px;
+        margin: 5% auto;
+    }
+    .contact_content_left {
+        padding-bottom: 10%;
+    }
+    .Business_content_item h6 {
+        font-size: 16px;
+    }
+    .Business_content_item p {
+        font-size: 16px;
+    }
+    .Revenue_content_foot {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .joins .Businessinfo .Revenue_content_header {
+        width: 200%;
+    }
+    .joins .Businessinfo .Revenue_content {
+        overflow-x: auto;
+    }
+    .joins .Businessinfo .Revenue_content_header p {
+        font-size: 16px;
+    }
+    .joins .Businessinfo .Advantages_msg .msg_item .msg_header {
+        border-radius: 20px;
+    }
+    .joins .Revenue_header_item p {
+        font-size: 22px;
+    }
+
+    .news_main .companynews {
+        margin-top: 65%;
+    }
+
+    .InvestorReturns .InvestorReturns_one .InvestorReturns_one_advice h3 {
+        font-size: 16px;  letter-spacing: 6px;
+    }
+    .InvestorReturns .InvestorReturns_one .InvestorReturns_one_advice h2 {
+        font-size: 28px;letter-spacing: 4px;
+    }
+    .InvestorReturns .InvestorReturns_one .InvestorReturns_one_advice p {
+        letter-spacing: 0;
+    }
+    .InvestorReturns .InvestorReturns_one .InvestorReturns_one_advice a {
+        font-size: 16px;  margin-top: 5%;  width: 50%;  height: 40px;  line-height: 40px;
+    }
+
+    .InvestorReturns .InvestorReturns_two_title h3 {
+        font-size: 22px;  letter-spacing: 2px;
+    }
+    .InvestorReturns .InvestorReturns_two_title p {
+        font-size: 16px;letter-spacing: 4px;margin-top: 0;
+    }
+    .serieslist_left {
+        margin-top: 5%;    width: 100%;
+    }
+    .InvestorReturns .InvestorReturns_two .InvestorReturns_two_main .InvestorReturns_two_main_list h4 {
+        font-size: 20px;
+    }
+    .InvestorReturns .InvestorReturns_two .InvestorReturns_two_main .InvestorReturns_two_main_list p {
+        font-size: 14px;
+        line-height: 32px;letter-spacing: 0px;
+    }
+    .InvestorReturns .InvestorReturns_two a {
+        font-size: 16px;
+        width: 50%;
+    }
+    .talent_title li {
+        font-size: 20px;
+    }
+    .link li {
+        font-size: 16px;
+    }
+    .InvestorReturns .accordion{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .link {
+        width:200%;
+    }
+    .link li:first-child {
+        padding-left: 0;
+        text-align: center;
+    }
+    .link li {
+
+        width: 18%;    line-height: 50px;
+
+    }
+    .talent_box_one_fubiao {
+        display: inherit;
+    }
+    .talent_box_one_fubiao p:first-child {
+        font-size: 18px;
+    }
+    .talent_box_one_fubiao p:last-child {
+        font-size: 18px;
+    }
+    .InvestorReturns_four_text p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .talent_title li {
+        line-height: 50px;
+    }
+    .talent_box_one .link li {
+        font-size: 14px;
+    }
+    .index_main .section5 .click_imgmode{
+        display: none
+    }
+    .index_main .section5 .phone_imgmode{
+        display: block
+    }
+
+    .used_content_img:nth-child(1) {
+        width: 100%;
+    }
+    .used_content_img:nth-child(5) {
+        width: 100%;
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt p {  letter-spacing: 0;  }
+    .index_main .section1 .index_banner .item .inner .block_txt a {  font-size: 18px;  margin: 5% auto 0;  width: 35%;  }
+    .page_title h3 {  font-size: 22px;letter-spacing: 12px;  }
+    .page_title p {  font-size: 16px;  margin-top: 0%;letter-spacing: 4px;  }
+    .index_main .section2 .page_leftimg {  margin-bottom: 5%;  width: 100%;  }
+    .index_main .section2 .page_leftimg .box {  width: 47%!important;  }
+    .index_main .section2 .page_righttxt {  width: 100%;  }
+    .index_main .section2 .page_leftimg .box:nth-child(2n) {  margin-right: 0;  }
+    .index_main .section2 .page_leftimg .box .bg {  padding: 0 20px 40%;  padding-top: 17px;  transition: all .3s ease;  }
+    .index_main .section2 .page_leftimg .box .bg .txt {  overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;  -webkit-line-clamp:9;    font-size: 16px;  -webkit-box-orient: vertical; height: 280px;}
+    .index_main .section2 .page_leftimg .box .temp .name {  font-size: 16px;  }
+    .index_main .section3 .vantagem_list ul li h3 {  font-size: 22px;  }
+    .index_main .section3 .vantagem_list ul li p {  font-size: 16px; margin-top: 3%;  }
+    .index_main .section3 .vantagem_list ul li .img_coverment {  width: 57%;  height: 54%;    margin-bottom: 8%;  }
+    .index_main .section3 .vantagem_list ul li .img_coverment img {  width: 100%;  }
+    .index_main .section1 .index_banner .item .inner .block_txt h3 {  letter-spacing: 0;  }
+
+
+
+
+
+}
+
+@media screen and (max-width: 414px){
+    .index_main .section2 .page_leftimg .box .bg { padding: 0 20px 10px;padding-top: 17px;  transition: all .3s ease; }
+    .index_main .section2 .page_leftimg .box .bg .txt {  overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;font-size: 14px;  -webkit-line-clamp:9;  -webkit-box-orient: vertical; height: 250px;}
+
+}
+
+
+@media screen and (max-width: 375px){
+    .index_main .section2 .page_leftimg .box .bg .txt {  overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;font-size: 14px;  -webkit-line-clamp:9;  -webkit-box-orient: vertical; height: 220px;}
+
+}

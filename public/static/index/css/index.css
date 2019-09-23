@@ -1,0 +1,307 @@
+﻿@-webkit-keyframes scale-bg {
+    from {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes scale-bg {
+    from {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.index_main {
+    background: #f7f7f7;
+    margin-top: 100px;
+}
+
+.index_main .section1 {
+    position: relative
+}
+
+.index_main .section1 .index_banner .item {
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative
+}
+
+.index_main .section1 .index_banner .item.slick-current .scaleBg {
+    visibility: visible;
+    -webkit-animation: scale-bg 6s linear forwards;
+    animation: scale-bg 6s linear forwards
+}
+
+.index_main .section1 .index_banner .items {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+}
+
+.index_main .section1 .index_banner .items:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .2)
+}
+
+.index_main .section1 .index_banner .item .inner .block_txt {
+    position: absolute;
+    top: 36%;
+    right: 10px;
+    left: 10px;
+    opacity: 0;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease
+}
+
+.index_main .section1 .index_banner .item.active .inner .block_txt {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: 100ms;
+    transition-delay: 100ms
+}
+
+.index_main .section1 .index_banner .item .inner .block_txt h2 {font-size: 60px;letter-spacing: 8px; font-weight: bold; color: #fff;text-align: center;font-family: Microsoft YaHei}
+.index_main .section1 .index_banner .item .inner .block_txt p {font-size: 12px; letter-spacing: 6px; color: #fff;font-weight:400;text-align: center;font-family: Microsoft YaHei}
+
+
+
+.index_main .section1 .index_banner .item .inner .block_txt h3 {color: #fff;font-size: 24px;font-weight: normal;text-align: center;margin-top: 40px;letter-spacing: 3px}
+.index_main .section1 .index_banner .item .inner .block_txt a { text-align: center;font-size:24px;font-family:Microsoft YaHei; color: #FFFFFF;font-weight:400; line-height: 50px; display: block;margin: 65px auto 0;width:200px;height:50px;background:linear-gradient(90deg,rgba(0,63,192,1),rgba(63,161,231,1));border-radius:3px;}
+
+.index_main .section1 .slick_txt {
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    font-size: 0;
+    outline: 0;
+    border: 0
+}
+
+.index_main .section1 .left {
+    left: 0
+}
+
+.index_main .section1 .right {
+    right: 0
+}
+
+.index_main .section1 .slick_txt:hover .slick_arrow {
+    opacity: 1;
+    visibility: visible
+}
+
+.index_main .section1 .slick_txt .slick_arrow {
+    width: 20px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -18px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden
+}
+
+
+.container{ height: 100%;}
+.index_main .section2 {background: url("../images/page_twobg.jpg") no-repeat top center;background-size: cover; width: 100%;height: 100%;}
+.index_main .section2 .container{}
+/*.index_main .section2 .container .page_title{ margin-top: 100px;margin-bottom: 45px;}*/
+.page_title{ margin-bottom: 10%;margin-top: 24%;}
+.page_title h3{font-size:60px;font-weight:bold;color:#017DE7;letter-spacing: 18px;}
+.page_title p{font-size:24px;font-weight:400;line-height:40px;color: #FFFFFF; letter-spacing: 6px; margin-top: 10px; }
+.index_main .section2 .container .section2_page{width: 100%; }
+.index_main .section2 .page_leftimg{ display: inline-block;    width: 57.7%;}
+.index_main .section2 .page_leftimg .box{position: relative;/*overflow: hidden;*/padding-top: 0;float: left;/* margin-right: 40px;*/margin-right: 6%; cursor: pointer;}
+.index_main .section2 .page_righttxt{
+    width: 40.6%;
+}
+.index_main .section2 .page_righttxt img{
+    width: 100%;
+}
+
+.index_main .section2 .page_leftimg .box .pc {display: block;width: 100%;max-width: 280px;}
+.index_main .section2 .page_leftimg .box .temp {position: absolute;bottom: 0;left: 0;width: 100%;color: #fff;opacity: 1;padding: 0 20px 20px;transition: all .5s ease;}
+.index_main .section2 .page_leftimg .box .temp .name {line-height: 1.25;margin-top: 10px;font-weight: 700;font-size: 24px;color: #fff;}
+.index_main .section2 .page_leftimg .box .temp:after {content: "";width:280px;height: 8px;background:linear-gradient(90deg,rgba(0,63,192,1),rgba(63,161,231,1));}
+.index_main .section2 .page_leftimg .box .bg {   height: 100%;opacity: 0;width: 100%;background-image: linear-gradient(270deg,#3cb9ff,#6044d4);padding: 0 20px 115%;box-sizing: border-box;color: #fff;padding-top: 17px;transition: all .3s ease;max-width: 280px;}
+.index_main .section2 .page_leftimg .box .bg .txt {font-size: 16px;line-height: 1.5;text-align: left;color: #fff;}
+
+
+.index_main .section3 {width: 100%;height: 100%;background: url("../images/page_threebg.jpg") no-repeat top center;background-size: 100% 100%}
+.index_main .section3 .page_title{margin-bottom: 8%;}
+.index_main .section3 .vantagem_list{width: 100%;}
+.index_main .section3 .vantagem_list ul li{width: 21%; margin-left: 5.3%; float: left;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.index_main .section3 .vantagem_list ul li:first-child{ margin-left: 0;}
+.index_main .section3 .vantagem_list ul li .img_coverment{ margin-bottom: 50px; width:137px;height:137px; background:linear-gradient(90deg,rgba(0,63,192,1),rgba(63,161,231,1));border-radius:50%;}
+.index_main .section3 .vantagem_list ul li h3{font-size:50px;font-weight:bold; color: #FFFFFf; }
+.index_main .section3 .vantagem_list ul li p{font-size:24px;color: #FFFFFf;margin-top: 10px; }
+.index_main .section4 {width: 100%;height: 100%;background: url("../images/page_fourbg.jpg") no-repeat top center;background-size: 100% 100%}
+.index_main .section5 {width: 100%;height: 100%;background: url("../images/page_fivebg.jpg") no-repeat top center;background-size: 100% 100%}
+.index_main .section5 .page_title{ margin-bottom: 3%;}
+.index_main .section5 .click_imgmode{margin: 0 auto; text-align: center;}
+.index_main .section5 .click_imgmode img{width: 92%;}
+.index_main .food_hide{height: 344px!important;background: #000000;display: flex;justify-content: space-between;align-items: flex-start;}
+.index_main .food_hide .container{}
+.index_main .food_hide .foot_nav ul{ color: #FFFFFF; float: left; padding: 0 80px;}
+.index_main .food_hide .foot_nav ul li a{ color: #FFFFFF;font-size:18px;font-weight:300;line-height:40px;}
+.index_main .food_hide .foot_nav ul li:first-child a{font-weight:400;}
+.index_main .food_hide .foot_meass .foot_cion{ float: left;margin: 0 15px;}
+
+@media only screen and (max-width: 1600px) {
+    .index_main .section1 .index_banner .item .inner .block_txt h4 {
+        font-size: 28px
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt h2 {
+        font-size: 60px
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt h3 {
+        font-size: 20px
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .index_main .section1 .index_banner .item .inner .block_txt h4 {
+        font-size: 24px
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt h2 {
+        font-size: 40px
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt h3 {
+        font-size: 18px;
+        margin-top: 5px
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .index_main .section1 .index_banner .item .inner .block_txt h4 {
+        font-size: 20px
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt h2 {
+        font-size: 40px;
+    }
+    .index_main .section1 .index_banner .item .inner .block_txt h3 {
+        font-size: 18px
+    }
+
+    .index_main .section1 .index_banner .slick-arrow {
+        background-size: auto 30px
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 1199px) {
+    .index_main .section1 .index_banner .item .inner .block_txt h4 {
+        font-size: 18px
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt h2 {
+        font-size: 22px
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt h3 {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .index_main .section1 .index_banner .item {
+        height: 100vh
+    }
+
+    .index_main .section1 .index_banner .item .inner .block_txt {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0 20px;
+        top: 42%
+    }
+
+    .index_main .section1 .index_banner .slick-arrow {
+        display: none !important
+    }
+
+    .index_main .section1 .index_banner .slick-dots {
+        position: absolute;
+        bottom: 12px
+    }
+
+    .index_main .section1 .index_banner .slick-dots li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid #fff
+    }
+
+    .index_main .section1 .index_banner .slick-dots li button {
+        display: none
+    }
+
+    .index_main .section1 .index_banner .slick-dots li.slick-active {
+        background: #fff
+    }
+
+    .index_main .section1 .number {
+        bottom: 12%;
+        display: none
+    }
+
+    .index_main .section1 .number span {
+        margin-right: 22px
+    }
+
+    .index_main .section1 .number span:after {
+        bottom: -14px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 340px) {
+}
+
+@media only screen and (max-width: 320px) {
+}
